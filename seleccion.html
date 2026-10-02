@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elegí tu función — Cine 101</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="seleccion">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">C</span>
+        <span>CINE <b>101</b></span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html#cartelera">Cartelera</a>
+        <a href="index.html#estrenos">Estrenos</a>
+        <a href="candybar.html">Candy Bar</a>
+        <a href="index.html#promociones">Promociones</a>
+
+        <div class="location-wrap">
+          <button class="nav-location" type="button" aria-expanded="false">
+            Ubicaciones <span class="chevron">⌄</span>
+          </button>
+          <div class="location-panel">
+            <input type="search" placeholder="Buscar cine…" aria-label="Buscar cine" />
+            <div class="location-results"></div>
+          </div>
+        </div>
+
+        <div class="account-slot"></div>
+      </nav>
+    </header>
+
+    <main class="page-width inner-page">
+      <div class="page-hero compact">
+        <a class="back-link" href="index.html#cartelera">← Cartelera</a>
+        <p class="eyebrow">TU PRÓXIMA FUNCIÓN</p>
+        <h1>
+          Elegí cómo vivir<br />
+          <em>la película.</em>
+        </h1>
+        <div id="movie-context" class="context-pill"></div>
+      </div>
+
+      <div class="steps">
+        <section class="step-block" id="step-cinema">
+          <div class="step-title">
+            <span class="step-number">01</span>
+            <div>
+              <p class="eyebrow">PRIMERA DECISIÓN</p>
+              <h2>Elegí el cine</h2>
+            </div>
+          </div>
+          <div class="cinema-grid" id="cinema-list"></div>
+        </section>
+
+        <section class="step-block locked" id="step-time">
+          <div class="step-title">
+            <span class="step-number">02</span>
+            <div>
+              <p class="eyebrow">SELECCIONÁ TU FUNCIÓN</p>
+              <h2>Elegí el horario</h2>
+            </div>
+          </div>
+          <div class="time-grid" id="time-list"></div>
+        </section>
+
+        <section class="step-block locked" id="step-seats">
+          <div class="step-title">
+            <span class="step-number">03</span>
+            <div>
+              <p class="eyebrow">ENCONTRÁ TU LUGAR</p>
+              <h2>Elegí tus asientos</h2>
+            </div>
+          </div>
+
+          <div class="seat-layout">
+            <div class="screen-label"><span></span>PANTALLA<span></span></div>
+            <div class="seat-map" id="seat-map"></div>
+            <div class="seat-legend">
+              <span><i class="seat available"></i> Disponible</span>
+              <span><i class="seat selected"></i> Tu selección</span>
+              <span><i class="seat occupied"></i> Ocupado</span>
+            </div>
+          </div>
+
+          <div class="seat-bottom">
+            <p class="seat-counter" id="seat-counter">0 asientos seleccionados — $0</p>
+            <button class="button" id="continue-seats" disabled>
+              Continuar <span>→</span>
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width footer-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">C</span>
+          <span>CINE <b>101</b></span>
+        </a>
+        <p>
+          El cine nos encuentra.<br />
+          <span>Viví la historia en pantalla grande.</span>
+        </p>
+        <div class="footer-meta">
+          <span>Palermo · Recoleta · Belgrano</span>
+          <span>© 2024 Cine 101</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

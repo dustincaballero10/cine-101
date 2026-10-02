@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Armá tu combo — Cine 101</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="candybar">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">C</span>
+        <span>CINE <b>101</b></span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html#cartelera">Cartelera</a>
+        <a href="index.html#estrenos">Estrenos</a>
+        <a href="candybar.html">Candy Bar</a>
+        <a href="index.html#promociones">Promociones</a>
+
+        <div class="location-wrap">
+          <button class="nav-location" type="button" aria-expanded="false">
+            Ubicaciones <span class="chevron">⌄</span>
+          </button>
+          <div class="location-panel">
+            <input type="search" placeholder="Buscar cine…" aria-label="Buscar cine" />
+            <div class="location-results"></div>
+          </div>
+        </div>
+
+        <div class="account-slot"></div>
+      </nav>
+    </header>
+
+    <main class="page-width inner-page">
+      <div class="page-hero">
+        <a class="back-link" href="index.html">← Inicio</a>
+        <p class="eyebrow">UN CLÁSICO DE CADA FUNCIÓN</p>
+        <h1>Armá tu <em>combo.</em></h1>
+        <p>Elegí tus favoritos y prepará algo rico para disfrutar en la sala.</p>
+      </div>
+
+      <div class="builder-layout">
+        <section class="product-list" id="product-list"></section>
+
+        <aside class="total-card">
+          <span class="eyebrow">TU SELECCIÓN</span>
+          <div class="total-count">
+            <strong id="item-count">0</strong>
+            <span>productos</span>
+          </div>
+          <div id="combo-preview" class="combo-preview">Sumá algo rico para empezar.</div>
+          <div class="total-line">
+            <span>Total</span>
+            <strong id="combo-total">$0</strong>
+          </div>
+          <button class="button full-button" id="create-combo">
+            Crear combo <span>→</span>
+          </button>
+          <p id="combo-feedback" class="feedback" aria-live="polite"></p>
+          <a id="return-summary" class="text-link hidden" href="resumen.html">
+            Volver al resumen <span>→</span>
+          </a>
+        </aside>
+      </div>
+
+      <section id="saved-combos-section" class="saved-combos hidden">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">TUS CREACIONES</p>
+            <h2>Combos guardados</h2>
+          </div>
+        </div>
+        <div id="saved-combos" class="saved-combo-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width footer-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">C</span>
+          <span>CINE <b>101</b></span>
+        </a>
+        <p>
+          El cine nos encuentra.<br />
+          <span>Viví la historia en pantalla grande.</span>
+        </p>
+        <div class="footer-meta">
+          <span>Palermo · Recoleta · Belgrano</span>
+          <span>© 2024 Cine 101</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

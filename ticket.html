@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tu entrada — Cine 101</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="ticket">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">C</span>
+        <span>CINE <b>101</b></span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html#cartelera">Cartelera</a>
+        <a href="index.html#estrenos">Estrenos</a>
+        <a href="candybar.html">Candy Bar</a>
+        <a href="index.html#promociones">Promociones</a>
+
+        <div class="location-wrap">
+          <button class="nav-location" type="button" aria-expanded="false">
+            Ubicaciones <span class="chevron">⌄</span>
+          </button>
+          <div class="location-panel">
+            <input type="search" placeholder="Buscar cine…" aria-label="Buscar cine" />
+            <div class="location-results"></div>
+          </div>
+        </div>
+
+        <div class="account-slot"></div>
+      </nav>
+    </header>
+
+    <main class="page-width inner-page ticket-page">
+      <div class="ticket-intro">
+        <span class="success-icon">✓</span>
+        <p class="eyebrow">COMPRA CONFIRMADA</p>
+        <h1>Nos vemos <em>en el cine.</em></h1>
+        <p>Tu entrada está lista. Guardá este comprobante para el día de la función.</p>
+      </div>
+
+      <article class="ticket-card">
+        <div class="ticket-main">
+          <div class="ticket-topline">
+            <span class="ticket-brand">CINE <b>101</b></span>
+            <span class="ticket-status">✓ CONFIRMADA</span>
+          </div>
+
+          <div class="ticket-movie">
+            <p class="eyebrow">TU FUNCIÓN</p>
+            <h2 id="ticket-movie">—</h2>
+          </div>
+
+          <div class="ticket-detail-grid" id="ticket-details"></div>
+          <div class="ticket-seats" id="ticket-seats"></div>
+          <div class="ticket-combos" id="ticket-combos"></div>
+
+          <div class="ticket-grand">
+            <span>Total pagado</span>
+            <strong id="ticket-total">$0</strong>
+          </div>
+
+          <div class="reservation-code">
+            <span>CÓDIGO DE RESERVA</span>
+            <strong>CINE101-A3F9C2D8</strong>
+          </div>
+        </div>
+
+        <div class="ticket-stub">
+          <div class="stub-perforation"></div>
+          <p class="eyebrow">PRESENTÁ EN EL CINE</p>
+          <div class="qr-wrap">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=CINE101-A3F9C2D8" alt="Código QR" />
+            <div class="qr-fallback">QR no disponible</div>
+          </div>
+          <button class="button" id="back-home">Volver al inicio</button>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

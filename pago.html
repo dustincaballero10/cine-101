@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pago — Cine 101</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="pago">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">C</span>
+        <span>CINE <b>101</b></span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html#cartelera">Cartelera</a>
+        <a href="index.html#estrenos">Estrenos</a>
+        <a href="candybar.html">Candy Bar</a>
+        <a href="index.html#promociones">Promociones</a>
+
+        <div class="location-wrap">
+          <button class="nav-location" type="button" aria-expanded="false">
+            Ubicaciones <span class="chevron">⌄</span>
+          </button>
+          <div class="location-panel">
+            <input type="search" placeholder="Buscar cine…" aria-label="Buscar cine" />
+            <div class="location-results"></div>
+          </div>
+        </div>
+
+        <div class="account-slot"></div>
+      </nav>
+    </header>
+
+    <main class="page-width inner-page">
+      <div class="page-hero compact">
+        <a class="back-link" href="resumen.html">← Volver al resumen</a>
+        <p class="eyebrow">ÚLTIMO PASO</p>
+        <h1>Completá tu <em>pago.</em></h1>
+      </div>
+
+      <div class="payment-layout">
+        <section class="payment-card">
+          <div class="payment-head">
+            <div>
+              <p class="eyebrow">PAGO CON TARJETA</p>
+              <h2>Datos de tu tarjeta</h2>
+            </div>
+            <div class="card-symbol">▰</div>
+          </div>
+
+          <form id="payment-form" class="payment-form">
+            <label>
+              Nombre del titular
+              <input name="holder" autocomplete="cc-name" required />
+            </label>
+            <label>
+              Número de tarjeta
+              <input name="card" inputmode="numeric" autocomplete="cc-number" maxlength="16" placeholder="0000 0000 0000 0000" required />
+            </label>
+            <div class="field-row">
+              <label>
+                Vencimiento
+                <input name="expiry" inputmode="numeric" autocomplete="cc-exp" maxlength="5" placeholder="MM/YY" required />
+              </label>
+              <label>
+                CVV
+                <input name="cvv" inputmode="numeric" autocomplete="cc-csc" maxlength="3" placeholder="•••" required />
+              </label>
+            </div>
+            <button class="button full-button" id="pay-submit">
+              Pagar <span>→</span>
+            </button>
+            <p class="secure-note">✦ Tus datos se usan solo para esta demostración.</p>
+          </form>
+        </section>
+
+        <aside class="checkout-card payment-total">
+          <p class="eyebrow">TOTAL A PAGAR</p>
+          <div class="payment-amount" id="payment-total">$0</div>
+          <div class="payment-includes">
+            <span>✓</span>
+            <p>Tu función y tus asientos están reservados para esta compra.</p>
+          </div>
+          <div class="payment-ticket-art">
+            <span>101</span>
+            <small>CINE · ENTRADAS</small>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width footer-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">C</span>
+          <span>CINE <b>101</b></span>
+        </a>
+        <p>
+          El cine nos encuentra.<br />
+          <span>Viví la historia en pantalla grande.</span>
+        </p>
+        <div class="footer-meta">
+          <span>Palermo · Recoleta · Belgrano</span>
+          <span>© 2024 Cine 101</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

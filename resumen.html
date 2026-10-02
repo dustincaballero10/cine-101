@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resumen de compra — Cine 101</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="resumen">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">C</span>
+        <span>CINE <b>101</b></span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html#cartelera">Cartelera</a>
+        <a href="index.html#estrenos">Estrenos</a>
+        <a href="candybar.html">Candy Bar</a>
+        <a href="index.html#promociones">Promociones</a>
+
+        <div class="location-wrap">
+          <button class="nav-location" type="button" aria-expanded="false">
+            Ubicaciones <span class="chevron">⌄</span>
+          </button>
+          <div class="location-panel">
+            <input type="search" placeholder="Buscar cine…" aria-label="Buscar cine" />
+            <div class="location-results"></div>
+          </div>
+        </div>
+
+        <div class="account-slot"></div>
+      </nav>
+    </header>
+
+    <main class="page-width inner-page">
+      <div class="page-hero compact">
+        <a class="back-link" href="seleccion.html">← Volver a los asientos</a>
+        <p class="eyebrow">UN PASO MÁS Y ESTÁS ADENTRO</p>
+        <h1>Revisá tu <em>función.</em></h1>
+        <p>Confirmá los detalles y sumá algo rico para disfrutar.</p>
+      </div>
+
+      <div class="summary-layout">
+        <div class="summary-main">
+          <section class="summary-card">
+            <div class="summary-card-head">
+              <div>
+                <p class="eyebrow">TU FUNCIÓN</p>
+                <h2 id="summary-movie">—</h2>
+              </div>
+              <span class="summary-chip">ENTRADAS</span>
+            </div>
+            <div class="order-details" id="order-details"></div>
+          </section>
+
+          <section class="summary-card candy-summary">
+            <div class="summary-card-head">
+              <div>
+                <p class="eyebrow">PARA DISFRUTAR EN LA SALA</p>
+                <h2>Candy Bar</h2>
+              </div>
+              <span class="candy-spark">✳</span>
+            </div>
+            <p class="muted">Elegí uno o más combos. Los combos superiores a $40.000 tienen 20% de descuento.</p>
+            <div id="combo-options" class="combo-options"></div>
+            <div class="summary-actions">
+              <a class="button button-secondary" id="new-combo" href="candybar.html">＋ Crear nuevo combo</a>
+              <button class="skip-combo" id="skip-candy">
+                Continuar sin candy bar <span>→</span>
+              </button>
+            </div>
+          </section>
+        </div>
+
+        <aside class="checkout-card">
+          <p class="eyebrow">DETALLE DE COMPRA</p>
+          <h2>Tu resumen</h2>
+          <div class="checkout-lines">
+            <div>
+              <span>Asientos</span>
+              <strong id="seat-subtotal">$0</strong>
+            </div>
+            <div id="combo-total-line" class="hidden">
+              <span>Combos</span>
+              <strong id="combos-subtotal">$0</strong>
+            </div>
+          </div>
+          <div class="grand-total">
+            <span>Total</span>
+            <strong id="grand-total">$0</strong>
+          </div>
+          <button class="button full-button" id="pay-order">
+            Pagar <span>→</span>
+          </button>
+          <p class="secure-note">✦ Compra segura · Pago protegido</p>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width footer-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">C</span>
+          <span>CINE <b>101</b></span>
+        </a>
+        <p>
+          El cine nos encuentra.<br />
+          <span>Viví la historia en pantalla grande.</span>
+        </p>
+        <div class="footer-meta">
+          <span>Palermo · Recoleta · Belgrano</span>
+          <span>© 2024 Cine 101</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

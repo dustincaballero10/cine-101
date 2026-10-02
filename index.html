@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cine 101 — Viví la historia</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">C</span>
+        <span>CINE <b>101</b></span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html#cartelera">Cartelera</a>
+        <a href="index.html#estrenos">Estrenos</a>
+        <a href="candybar.html">Candy Bar</a>
+        <a href="index.html#promociones">Promociones</a>
+
+        <div class="location-wrap">
+          <button class="nav-location" type="button" aria-expanded="false">
+            Ubicaciones <span class="chevron">⌄</span>
+          </button>
+          <div class="location-panel">
+            <input type="search" placeholder="Buscar cine…" aria-label="Buscar cine" />
+            <div class="location-results"></div>
+          </div>
+        </div>
+
+        <div class="account-slot"></div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-backdrop"></div>
+        <div class="hero-content">
+          <div class="eyebrow"><span class="live-dot"></span> ESTRENO DESTACADO</div>
+          <div class="hero-title-row">
+            <span class="rating">+16</span>
+            <h1>
+              SEXO<br />
+              <em>LA PELÍCULA</em>
+            </h1>
+          </div>
+          <p class="hero-meta">COMEDIA <i>·</i> SUSPENSO <i>·</i> INTRIGA</p>
+          <p class="hero-tagline">Nominada al Nobel de la Paz.</p>
+          <button class="button" data-buy="sexo">
+            Comprar entradas <span>→</span>
+          </button>
+        </div>
+        <div class="hero-index">01 <span>/</span> 04</div>
+        <div class="hero-stamp">UNA HISTORIA<br />QUE TE MUEVE</div>
+      </section>
+
+      <section class="section page-width" id="cartelera">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">ELEGÍ TU PRÓXIMA HISTORIA</p>
+            <h2>En cartelera</h2>
+          </div>
+          <a class="text-link" href="#estrenos">Próximos estrenos <span>↗</span></a>
+        </div>
+
+        <div class="movie-grid">
+          <article class="movie-card">
+            <div class="poster poster-wicked">
+              <span class="poster-kicker">UNA AVENTURA MÁGICA</span>
+              <strong>WICKED</strong>
+              <small>PARTE UNO</small>
+              <span class="poster-orb">✦</span>
+            </div>
+            <div class="movie-info">
+              <div>
+                <h3>Wicked</h3>
+                <p>Fantástico · Musical <span>122 min</span></p>
+              </div>
+              <button class="icon-buy" data-buy="wicked" aria-label="Comprar entradas para Wicked">→</button>
+            </div>
+          </article>
+
+          <article class="movie-card">
+            <div class="poster poster-redone">
+              <span class="poster-kicker">ESTA NAVIDAD</span>
+              <strong>RED<br />ONE</strong>
+              <small>EL RESCATE COMIENZA</small>
+              <span class="poster-spark">✳</span>
+            </div>
+            <div class="movie-info">
+              <div>
+                <h3>Red One</h3>
+                <p>Acción · Comedia <span>122 min</span></p>
+              </div>
+              <button class="icon-buy" data-buy="redone" aria-label="Comprar entradas para Red One">→</button>
+            </div>
+          </article>
+
+          <article class="movie-card">
+            <div class="poster poster-smile">
+              <span class="poster-kicker">NO MIRES ATRÁS</span>
+              <strong>SMILE<br /><i>2</i></strong>
+              <small>EL MIEDO SE CONTAGIA</small>
+              <span class="poster-eye">◉</span>
+            </div>
+            <div class="movie-info">
+              <div>
+                <h3>Smile 2</h3>
+                <p>Terror <span>122 min</span></p>
+              </div>
+              <button class="icon-buy" data-buy="smile2" aria-label="Comprar entradas para Smile 2">→</button>
+            </div>
+          </article>
+
+          <article class="movie-card">
+            <div class="poster poster-sonrie">
+              <span class="poster-kicker">UNA HISTORIA REAL</span>
+              <strong>SONRÍE</strong>
+              <small>EL OTRO LADO DE LA RISA</small>
+              <span class="poster-face">☺</span>
+            </div>
+            <div class="movie-info">
+              <div>
+                <h3>Sonríe</h3>
+                <p>Documental <span>92 min</span></p>
+              </div>
+              <button class="icon-buy" data-buy="sonrie" aria-label="Comprar entradas para Sonríe">→</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section page-width" id="estrenos">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">PRÓXIMAMENTE EN CINE 101</p>
+            <h2>Próximos estrenos</h2>
+          </div>
+          <span class="section-note">Nuevas historias, muy pronto.</span>
+        </div>
+
+        <div class="mini-grid">
+          <article class="mini-card">
+            <div class="mini-art art-mufasa">M<span>◉</span></div>
+            <div>
+              <h3>Mufasa</h3>
+              <p>19 dic</p>
+            </div>
+            <span class="mini-arrow">↗</span>
+          </article>
+
+          <article class="mini-card">
+            <div class="mini-art art-paddington">P<span>✦</span></div>
+            <div>
+              <h3>Paddington en Perú</h3>
+              <p>25 dic</p>
+            </div>
+            <span class="mini-arrow">↗</span>
+          </article>
+
+          <article class="mini-card">
+            <div class="mini-art art-avatar">A<span>≈</span></div>
+            <div>
+              <h3>Avatar: El sentido del agua</h3>
+              <p>26 dic</p>
+            </div>
+            <span class="mini-arrow">↗</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="promo-band" id="promociones">
+        <div class="page-width">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">MÁS CINE, MÁS MOMENTOS</p>
+              <h2>Promociones</h2>
+            </div>
+            <span class="section-note">Disfrutá cada visita al máximo.</span>
+          </div>
+
+          <div class="promo-grid">
+            <article class="promo-card promo-red">
+              <span class="promo-number">01</span>
+              <span class="promo-icon">½</span>
+              <h3>2x1 Miércoles</h3>
+              <p>Con Club Estrella, cada miércoles es doble.</p>
+            </article>
+
+            <article class="promo-card promo-gold">
+              <span class="promo-number">02</span>
+              <span class="promo-icon">✳</span>
+              <h3>Combos Candy Bar</h3>
+              <p>El acompañamiento perfecto para tu película.</p>
+            </article>
+
+            <article class="promo-card promo-blue">
+              <span class="promo-number">03</span>
+              <span class="promo-icon">%</span>
+              <h3>20% con tarjetas</h3>
+              <p>Con tarjetas seleccionadas. Consultá condiciones.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width footer-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">C</span>
+          <span>CINE <b>101</b></span>
+        </a>
+        <p>
+          El cine nos encuentra.<br />
+          <span>Viví la historia en pantalla grande.</span>
+        </p>
+        <div class="footer-meta">
+          <span>Palermo · Recoleta · Belgrano</span>
+          <span>© 2024 Cine 101</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

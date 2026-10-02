@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi cuenta — Cine 101</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="login">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">C</span>
+        <span>CINE <b>101</b></span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html#cartelera">Cartelera</a>
+        <a href="index.html#estrenos">Estrenos</a>
+        <a href="candybar.html">Candy Bar</a>
+        <a href="index.html#promociones">Promociones</a>
+
+        <div class="location-wrap">
+          <button class="nav-location" type="button" aria-expanded="false">
+            Ubicaciones <span class="chevron">⌄</span>
+          </button>
+          <div class="location-panel">
+            <input type="search" placeholder="Buscar cine…" aria-label="Buscar cine" />
+            <div class="location-results"></div>
+          </div>
+        </div>
+
+        <div class="account-slot"></div>
+      </nav>
+    </header>
+
+    <main class="auth-shell">
+      <aside class="auth-art">
+        <div class="auth-art-copy">
+          <p class="eyebrow">TU LUGAR EN PRIMERA FILA</p>
+          <h1>
+            Las mejores<br />
+            historias se<br />
+            viven <em>juntos.</em>
+          </h1>
+          <p>Entrá a tu cuenta para empezar a planear tu próxima salida.</p>
+          <div class="auth-art-mark">C<span>101</span></div>
+        </div>
+      </aside>
+
+      <section class="auth-card">
+        <a class="back-link" href="index.html">← Volver al inicio</a>
+        <p class="eyebrow">BIENVENIDO A CINE 101</p>
+        <h2>Tu próxima función<br />empieza acá.</h2>
+
+        <div class="tabs">
+          <button class="tab active" data-tab="signin">Iniciar sesión</button>
+          <button class="tab" data-tab="register">Registrarse</button>
+        </div>
+
+        <form id="signin-form" class="auth-form">
+          <div class="field-row">
+            <label>
+              Nombre
+              <input name="nombre" autocomplete="given-name" required />
+            </label>
+            <label>
+              Apellido
+              <input name="apellido" autocomplete="family-name" required />
+            </label>
+          </div>
+
+          <label>
+            Email
+            <input name="email" type="text" inputmode="email" autocomplete="email" required />
+          </label>
+
+          <label>
+            Contraseña
+            <input name="password" type="password" autocomplete="current-password" required />
+          </label>
+
+          <button class="button full-button">Iniciar sesión <span>→</span></button>
+          <button type="button" class="skip-button" data-skip>Omitir por ahora</button>
+        </form>
+
+        <form id="register-form" class="auth-form hidden">
+          <div class="field-row">
+            <label>
+              Nombre
+              <input name="nombre" autocomplete="given-name" required />
+            </label>
+            <label>
+              Apellido
+              <input name="apellido" autocomplete="family-name" required />
+            </label>
+          </div>
+
+          <label>
+            Email
+            <input name="email" type="text" inputmode="email" autocomplete="email" required />
+          </label>
+
+          <label>
+            Contraseña
+            <input name="password" type="password" autocomplete="new-password" required />
+          </label>
+
+          <label>
+            Confirmar contraseña
+            <input name="confirm" type="password" autocomplete="new-password" required />
+          </label>
+
+          <button class="button full-button">Crear cuenta <span>→</span></button>
+          <button type="button" class="skip-button" data-skip>Omitir por ahora</button>
+        </form>
+
+        <p class="auth-fineprint">Al continuar, disfrutás de una experiencia pensada para vos.</p>
+      </section>
+    </main>
+  </body>
+</html>
