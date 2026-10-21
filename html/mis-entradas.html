@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mis entradas — Cine 101</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/mis-entradas.css" />
+    <script src="../js/reglas.js" defer></script>
+    <script src="../js/script.js" defer></script>
+  </head>
+  <body data-page="mis-entradas">
+    <header class="site-header">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark">C</span>
+        <span>CINE <b>101</b></span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="../index.html#cartelera">Cartelera</a>
+        <a href="../index.html#estrenos">Estrenos</a>
+        <a href="candybar.html">Candy Bar</a>
+        <a href="../index.html#promociones">Promociones</a>
+
+        <a class="nav-tickets" href="mis-entradas.html">Mis entradas</a>
+
+        <div class="location-wrap">
+          <button class="nav-location" type="button" aria-expanded="false">
+            Ubicaciones <span class="chevron">⌄</span>
+          </button>
+          <div class="location-panel">
+            <input type="search" placeholder="Buscar cine…" aria-label="Buscar cine" />
+            <div class="location-results"></div>
+          </div>
+        </div>
+
+        <div class="account-slot"></div>
+      </nav>
+    </header>
+
+    <main class="page-width inner-page">
+      <div class="page-hero compact">
+        <a class="back-link" href="../index.html">← Inicio</a>
+        <p class="eyebrow">TU CUENTA</p>
+        <h1>Mis <em>entradas.</em></h1>
+        <p id="points-summary"></p>
+      </div>
+      <p class="feedback" id="me-feedback" aria-live="polite"></p>
+      <div id="purchase-list" class="purchase-list"></div>
+    </main>
+  </body>
+</html>
