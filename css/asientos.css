@@ -1,0 +1,12 @@
+/* Formato, verificaciones y aviso 4D */
+.format-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.format-btn{display:grid;gap:4px;padding:18px;text-align:left;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:12px;cursor:pointer;font-family:var(--body)}
+.format-btn strong{font-family:var(--title);font-size:1.3rem}
+.format-btn span{color:var(--dim)}
+.format-btn.selected{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.notice{margin-top:12px;padding:16px;background:var(--alt);border:1px solid var(--border);border-radius:12px;color:var(--dim);line-height:1.5}
+.notice.ok{border-color:#94cba7;color:#94cba7}
+.notice.bad{border-color:var(--soft);color:var(--soft)}
+.notice label{display:grid;gap:6px;margin-top:10px;color:var(--text)}
+.notice label.check{display:flex;align-items:flex-start;gap:10px}
+.notice input[type=date]{padding:10px;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:8px}
